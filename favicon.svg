@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64">
+  <rect width="64" height="64" rx="12" fill="#2C3E2D"/>
+  <!-- stem -->
+  <path d="M32 58 Q32 40 32 22" stroke="#C4B49A" stroke-width="2.5" stroke-linecap="round" fill="none"/>
+  <!-- left leaves -->
+  <path d="M32 48 Q16 38 15 24 Q25 28 32 44" fill="#4A5C4B"/>
+  <path d="M32 36 Q16 26 17 12 Q27 16 32 32" fill="#4A5C4B" opacity="0.8"/>
+  <!-- right leaves -->
+  <path d="M32 42 Q48 32 49 18 Q39 22 32 38" fill="#4A5C4B"/>
+  <path d="M32 30 Q48 20 47 6 Q37 10 32 26" fill="#4A5C4B" opacity="0.8"/>
+  <!-- bud tip -->
+  <ellipse cx="32" cy="18" rx="5.5" ry="9" fill="#C4B49A"/>
+</svg>
