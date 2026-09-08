@@ -1,4 +1,4 @@
-# South Shore Cemetery Services — Annual Care Plans
+# South Shore Headstone Care — Annual Care Plans
 
 Ongoing care so families don't have to schedule each visit. Every plan includes photos after each visit and can be paid in full or spread across quarterly payments.
 
