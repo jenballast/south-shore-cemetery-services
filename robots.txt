@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://gratefulgraves.com/sitemap.xml
+Sitemap: https://southshoreheadstonecare.com/sitemap.xml
