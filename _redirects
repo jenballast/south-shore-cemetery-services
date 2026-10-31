@@ -3,6 +3,9 @@ https://www.gratefulgraves.com/*  https://southshoreheadstonecare.com/:splat  30
 
 # .html forms collapse to the clean URLs the site links to
 /cemeteries/cohasset-central-cemetery.html  /cemeteries/cohasset-central-cemetery  301!
+/cemeteries/couch-cemetery-marshfield.html  /cemeteries/couch-cemetery-marshfield  301!
+/cemeteries/groveland-cemetery-scituate.html  /cemeteries/groveland-cemetery-scituate  301!
+/cemeteries/woodside-cemetery-cohasset.html  /cemeteries/woodside-cemetery-cohasset  301!
 /cemeteries/first-parish-cemetery-norwell.html  /cemeteries/first-parish-cemetery-norwell  301!
 /cemeteries/high-street-cemetery-hingham.html  /cemeteries/high-street-cemetery-hingham  301!
 /cemeteries/hingham-cemetery.html  /cemeteries/hingham-cemetery  301!
