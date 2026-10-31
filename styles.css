@@ -462,6 +462,22 @@ footer a:hover { text-decoration: underline; }
 }
 .footer-bottom p { margin-bottom: 0; }
 
+/* ── PROMO BAR ── */
+.promo-bar {
+  position: fixed;
+  top: 60px; left: 0; right: 0;
+  z-index: 99;
+  background: var(--stone);
+  color: var(--white);
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 400;
+  line-height: 1.4;
+  padding: 9px 20px;
+}
+.promo-bar a { color: var(--white); font-weight: 600; text-decoration: underline; text-underline-offset: 3px; }
+.promo-bar a:hover { text-decoration: none; }
+
 /* ── RESPONSIVE ── */
 @media (max-width: 768px) {
   :root { --section-pad: 40px 20px; }
