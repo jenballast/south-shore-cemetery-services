@@ -1,0 +1,47 @@
+# Copy to .github/workflows/indexnow.yml in each Netlify-backed repo,
+# and copy indexnow.mjs to .github/scripts/indexnow.mjs.
+# Set HOST and KEY below (the key is not secret; it is served publicly at /{key}.txt).
+name: IndexNow
+
+on:
+  push:
+    branches: [main]
+    paths-ignore:
+      - '**.md'
+  workflow_dispatch:
+
+concurrency:
+  group: indexnow
+  cancel-in-progress: false
+
+jobs:
+  submit:
+    runs-on: ubuntu-latest
+    env:
+      INDEXNOW_HOST: southshoreheadstonecare.com
+      INDEXNOW_KEY: a2fad18faa4ca24945cd91aad96604b4
+      STATE_FILE: .indexnow-state.json
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 22
+
+      - name: Restore previous snapshot
+        uses: actions/cache/restore@v4
+        with:
+          path: .indexnow-state.json
+          key: indexnow-state-${{ github.run_id }}
+          restore-keys: indexnow-state-
+
+      # Netlify deploys on push; poll the live site for up to 8 minutes for the change to appear.
+      - name: Submit changed URLs
+        run: node .github/scripts/indexnow.mjs --wait-minutes 8
+
+      - name: Save snapshot
+        uses: actions/cache/save@v4
+        if: always()
+        with:
+          path: .indexnow-state.json
+          key: indexnow-state-${{ github.run_id }}
